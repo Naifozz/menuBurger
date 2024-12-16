@@ -1,18 +1,11 @@
 const menu = document.querySelector('.menu')
 const croix = document.querySelector('.croix')
 const menuOuvert = document.querySelector('.menuOuvert')
+const navbar = document.querySelector('.navbar')
 
-// carre.className = "truc"
+navbar.addEventListener('click', () => {
+    menu.classList.toggle("displayNone")
+    croix.classList.toggle('displayFlex')
+    menuOuvert.classList.toggle('displayFlex')
 
-menu.addEventListener('click', () => {
-    menu.className = "displayNone"
-    croix.className = "croix displayFlex"
-    menuOuvert.className = "menuOuvert displayFlex"
-
-})
-
-croix.addEventListener('click', () => {
-    menu.className = "menu displayFlex"
-    croix.className = "croix displayNone"
-    menuOuvert.className = "menuOuvert displayNone"
 })
