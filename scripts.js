@@ -7,5 +7,4 @@ navbar.addEventListener('click', () => {
     menu.classList.toggle("displayNone")
     croix.classList.toggle('displayFlex')
     menuOuvert.classList.toggle('displayFlex')
-
 })
